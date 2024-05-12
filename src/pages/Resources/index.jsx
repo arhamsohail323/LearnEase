@@ -10,8 +10,12 @@ const Resources = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);
 
   const categories = [
+
     { value: 'BSCS', label: 'BSCS' },
-    { value: 'BS Zoology', label: 'BS Zoology' },
+    { value: 'BSSE', label: 'BS SE' },
+    { value: 'BSIT', label: 'BS IT' },
+    { value: 'BSDPT', label: 'BS DPT' },
+    { value: 'BBA', label: 'BBA' },
     // Add more categories as needed
   ];
 

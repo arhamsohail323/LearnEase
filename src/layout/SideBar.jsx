@@ -206,7 +206,7 @@ const SideBar = () => {
                 </svg>
 
                 <span className="ms-3 text-white group-hover:text-gray-500 ">
-                  Learning  Oppertunities
+                  Learning  Opportunities
                 </span>
               </NavLink>
             </li>

@@ -60,7 +60,7 @@ const AddBlog = () => {
   return (
     <div className='m-5 p-5 bg-gray-50 rounded-2xl'>
       <div className='my-5 rounded flex justify-start items-center'>
-        <button className='group' onClick={() => navigate(-1)}>
+        <button className='group bg-PrimaryColor text-white rounded-full px-10 py-1' onClick={() => navigate(-1)}>
           Back
         </button>
         {/* <h1 className='text-2xl ml-2'>New Client</h1> */}

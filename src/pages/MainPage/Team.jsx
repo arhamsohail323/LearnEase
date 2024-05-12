@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router';
 import image1 from '../../assets/images/team3.png'
 import image2 from '../../assets/images/team2.jpg'
 import image3 from '../../assets/images/team1.jpeg'
+import { Link } from 'react-router-dom';
 
 const Team = () => {
     const navigate = useNavigate();
@@ -16,38 +17,38 @@ const Team = () => {
             </div>
             <div className="flex flex-wrap justify-center">
 
-                <div onClick={() => navigate(`/consultant/7`)} className="relative w-64 h-72 overflow-hidden m-4 rounded-lg shadow-md transform transition duration-500 hover:scale-105">
+                <div className="relative w-64 h-72 overflow-hidden m-4 rounded-lg shadow-md transform transition duration-500 hover:scale-105">
                     <img src={image3} alt="Card 2" className="w-full h-full object-cover" />
                     <div className="absolute inset-0 flex flex-col items-center justify-end bg-gradient-to-b from-transparent to-[#009688]">
                         <p className="text-white text-center">Fatima Waheed </p>
                         <p className="text-white text-center text-xl mb-4">Managing Director</p>
                         <div className="flex space-x-4 text-white mb-4">
-                            <FaFacebook size={24} />
-                            <FaLinkedin size={24} />
+                       <Link to={'https://www.facebook.com/profile.php?id=61551895924161&mibextid=ZbWKwL'}><FaFacebook size={24} /></Link>
+                           <Link to={'https://www.linkedin.com/in/fatima-waheed-a75152279?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'}> <FaLinkedin size={24} /> </Link>
                             <FaEnvelope size={24} />
                         </div>
                     </div>
                 </div>
-                <div onClick={() => navigate(`/consultant/8`)} className="relative w-64 h-72 overflow-hidden m-4 rounded-lg shadow-md transform transition duration-500 hover:scale-105">
+                <div className="relative w-64 h-72 overflow-hidden m-4 rounded-lg shadow-md transform transition duration-500 hover:scale-105">
                     <img src={image1} alt="Card 3" className="w-full h-full object-cover" />
                     <div className="absolute inset-0 flex flex-col items-center justify-end bg-gradient-to-b from-transparent to-[#009688]">
                         <p className="text-white text-center">MD Arham Sohail</p>
                         <p className="text-white text-center text-xl mb-4">Founder & CEO</p>
                         <div className="flex space-x-4 text-white mb-4">
-                            <FaFacebook size={24} />
-                            <FaLinkedin size={24} />
+                        <Link to={'https://www.facebook.com/MdArhamSohaildeveloper?mibextid=ZbWKwL'}><FaFacebook size={24} /></Link>
+                        <Link to={'https://www.linkedin.com/in/mdarhamsohail?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'}> <FaLinkedin size={24} /></Link>
                             <FaEnvelope size={24} />
                         </div>
                     </div>
                 </div>
-                <div onClick={() => navigate(`/consultant/9`)} className="relative w-64 h-72 overflow-hidden m-4 rounded-lg shadow-md transform transition duration-500 hover:scale-105">
+                <div className="relative w-64 h-72 overflow-hidden m-4 rounded-lg shadow-md transform transition duration-500 hover:scale-105">
                     <img src={image2} alt="Card 4" className="w-full h-full object-cover" />
                     <div className="absolute inset-0 flex flex-col items-center justify-end bg-gradient-to-b from-transparent to-[#009688]">
                         <p className="text-white text-center">Muniba Iqbal</p>
                         <p className="text-white text-center text-xl mb-4">Assistant Manager</p>
                         <div className="flex space-x-4 text-white mb-4">
-                            <FaFacebook size={24} />
-                            <FaLinkedin size={24} />
+                           <Link to={'https://www.facebook.com/aniba.khatak?mibextid=ZbWKwL'}> <FaFacebook size={24} /></Link>
+                            <Link to={'https://www.linkedin.com/in/muniba-graphics?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'}><FaLinkedin size={24} /></Link>
                             <FaEnvelope size={24} />
                         </div>
                     </div>

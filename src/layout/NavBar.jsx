@@ -49,11 +49,11 @@ const NavBar = () => {
             <div className="flex items-center">
               <div className="flex items-center">
                 <img
-                  className="w-8 h-8 rounded-full"
+                  className="w-12 h-12 rounded-full"
                   src={logo}
                   alt="user photo"
                 />
-                <span className="block text-sm text-gray-900 font-medium ms-2">
+                <span className="block text-lg text-gray-900 font-medium ms-2">
                   Learn Ease.Pk Admin 
                 </span>
               </div>

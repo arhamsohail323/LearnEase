@@ -7,7 +7,7 @@ const Section = () => {
     <div className="bg-white">
       <div className="bg-sectionBg rounded-3xl mb-24">
         <div className="flex flex-col gap-5 justify-center items-center p-8 sm:p-16 lg:p-28">
-          <p className="text-sectionText text-sm">First Impressions Count</p>
+          <p className="text-sectionText text-sm bg-PrimaryColor text-white rounded-full px-5 py-2 font-bold">First Impressions Count</p>
           <h2 className="text-3xl font-medium">Let's Start with</h2>
           <h1 className="lg:text-4xl md:text-4xl text-xl sm:text-4xl text-Step font-medium">
             "Please Introduce Yourself"
@@ -24,11 +24,12 @@ const Section = () => {
             className="p-3 h-40 border-2 mb-4 text-start border-gray-500 outline-none rounded-lg w-full sm:w-3/4 lg:w-3/2"
             placeholder="Enter your answer"
           />
+          <button className="font-bold text-end bg-PrimaryColor text-white px-10 py-2 rounded-full">Submit</button>
           <p className="font-bold text-lg ">
             Note: Simply click 'Review My Introduction' directly to see the
             analysis of the example.
           </p>
-         
+
         </div>
       </div>
       <StartFree />

@@ -10,12 +10,13 @@ const StartFree = () => {
       <div className="bg-PrimaryColor w-full rounded-3xl">
         <div className="flex flex-col justify-center items-center p-6 lg:p-20 md:p-20 sm:p-20 ">
           <h1 className="sm:text-4xl  text-white mb-8">
-            Sign up in June to enjoy FREE access
+          Empower Your Future
           </h1>
-          <p className="text-whiteColor text-sm sm:text-2xl text-center lg:text-2xl md:text-2xl ">
-          Learn Ease And Career Consultants, developed by over 50 industry leaders and seasoned professionals,
-            <br /> leverages advanced technology to empower candidates in achieving their career aspirations. <br />
-            We have successfully supported over 1000 individuals    in securing their dream roles. 
+          <h1 className="sm:text-4xl  text-white mb-8">
+          Sign Up Now For Free Opportunities with LearnEase!
+          </h1>
+          <p className="text-whiteColor text-sm sm:text-xl text-center lg:text-xl md:text-xl ">
+          Join LearnEase today to unlock a world of opportunity for students! Sign up now for free access to courses and career consultation services, empowering your journey to a brighter future. Don't miss out on this golden chance to shape your destiny with expert guidance and resources. Take the first step towards success with LearnEase!
           </p>
           <div class="max-w-md p-2 bg-white rounded-lg overflow-hidden shadow-lg m-4">
             <img
@@ -29,9 +30,10 @@ const StartFree = () => {
               </div>
               <p class="text-gray-700 text-center text-base">
                 <ul class="list-disc list-inside text-start">
-                  <li>Unlimited Sessions</li>
-                  <li>Full Feedback Report</li>
-                  <li>Interview History</li>
+                  <li> Unlock Potential at LearnEase!</li>
+                  <li>Free Courses & Counseling at LearnEase!</li>
+                  <li> Free Benefits at LearnEase!</li>
+                  <li> Free Enrollment for Success!</li>
                 </ul>
               </p>
             </div>

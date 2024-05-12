@@ -10,8 +10,12 @@ const Notes = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);
 
   const categories = [
+  
     { value: 'BSCS', label: 'BSCS' },
-    { value: 'BS Zoology', label: 'BS Zoology' },
+    { value: 'BSSE', label: 'BS SE' },
+    { value: 'BSIT', label: 'BS IT' },
+    { value: 'BSDPT', label: 'BS DPT' },
+    { value: 'BBA', label: 'BBA' },
     // Add more categories as needed
   ];
 
@@ -26,7 +30,7 @@ const Notes = () => {
   return (
     <div className='m-5 p-5'>
       <div className='flex justify-between items-center mb-5 pb-3 border-b-2'>
-        <div className='rounded text-2xl font-bold'>Lecture Notes</div>
+        <div className=' text-2xl font-bold bg-PrimaryColor text-white py-1 px-2 rounded-full'>Lecture Notes</div>
         <div className='flex items-center'>
           <div className='relative mr-3'>
             <SearchInput

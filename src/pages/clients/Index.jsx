@@ -28,7 +28,7 @@ const Clients = () => {
   return (
     <div className='m-5 p-5'>
       <div className='flex justify-between items-center mb-5 pb-3 border-b-2'>
-        <div className='rounded text-2xl font-bold'>Career Consultant</div>
+        <div className=' text-2xl font-bold  bg-PrimaryColor text-white py-1 px-2 rounded-full'>Career Consultant</div>
         <button 
           className='border-2 py-1 rounded-md px-3 hover:bg-PrimaryColor hover:text-white border-PrimaryColor text-PrimaryColor'
           onClick={() => navigate('/clients/addclient')}

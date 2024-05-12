@@ -28,7 +28,7 @@ const BlogPost = () => {
   return (
     <div className='m-5 p-5'>
       <div className='flex justify-between items-center mb-5 pb-3 border-b-2'>
-        <div className='rounded text-2xl font-bold'>Blog</div>
+        <div className=' text-2xl font-bold bg-PrimaryColor text-white rounded-full py-1 px-20'>Blog</div>
         <button 
           className='border-2 py-1 rounded-md px-3 hover:bg-PrimaryColor hover:text-white border-PrimaryColor text-PrimaryColor'
           onClick={() => navigate('/blog/blogpost')}

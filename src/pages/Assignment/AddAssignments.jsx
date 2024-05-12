@@ -65,14 +65,17 @@ const AddAssignments = () => {
   // Options for education fields
   const options = [
     { value: 'BSCS', label: 'BSCS' },
-    { value: 'BS Zoology', label: 'BS Zoology' },
+    { value: 'BSSE', label: 'BS SE' },
+    { value: 'BSIT', label: 'BS IT' },
+    { value: 'BSDPT', label: 'BS DPT' },
+    { value: 'BBA', label: 'BBA' },
     // Add more options as needed
   ];
 
   return (
     <div className='m-5 p-5 bg-gray-50 rounded-2xl'>
       <div className='my-5 rounded flex justify-start items-center'>
-        <button className='group' onClick={() => navigate(-1)}>
+      <button className='group bg-PrimaryColor text-white rounded-full px-10 py-1' onClick={() => navigate(-1)}>
           Back
         </button>
       </div>
