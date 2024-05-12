@@ -25,7 +25,7 @@ const Footer = () => {
             </div>
 
             <div className="text-center md:text-left">
-              <p className="font-semibold text-white bg-PrimaryColor rounded-md text-center py-1">Industries</p>
+              <p className="font-semibold text-white bg-PrimaryColor rounded-md text-center py-1 mt-5 lg:mt-0 md:mt-0 sm:mt-0">Industries</p>
 
               <div className="flex flex-col md:items-start items-center mt-5 space-y-2">
                 <p className="transition-colors duration-300 text-gray-300 hover:text-blue-400 hover:underline hover:cursor-pointer">
@@ -34,7 +34,7 @@ const Footer = () => {
                 </p>
                 <p className="transition-colors duration-300 text-gray-300 hover:text-blue-400 hover:underline hover:cursor-pointer">
 
-                  <Link to={'/blogs/main'}>Informationaal Content</Link>
+                  <Link to={'/blogs/main'}>Informational Content</Link>
                 </p>
                 <p className="transition-colors duration-300 text-gray-300 hover:text-blue-400 hover:underline hover:cursor-pointer">
 

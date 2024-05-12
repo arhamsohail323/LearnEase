@@ -29,7 +29,7 @@ const Navbar = () => {
   return (
     <>
       <div className="containers">
-        <nav className="fixed top-0 z-10 bg-opacity-50 bg-slate-100  flex flex-col sm:flex-row items-center justify-between px-6 py-4 w-full">
+        <nav className=" z-10 bg-opacity-50 bg-slate-100  flex flex-col sm:flex-row items-center justify-between px-6 py-4 w-full">
           {/* Logo */}
           <img
             src={logos}

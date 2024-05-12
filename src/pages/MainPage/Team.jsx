@@ -13,7 +13,7 @@ const Team = () => {
         <div id='team'>
             <div className="text-center my-8 flex justify-center items-center flex-col">
                 <h1 className="text-3xl font-bold bg-PrimaryColor text-white py-2 px-28 rounded-lg ">Our Team</h1>
-                <p className="text-lg text-gray-600 font-semibold my-4">Meet the mastermind behind Learnease.pk, paving the path for success. With our dynamic managing director and supportive assistant director, we're not just a website; we're your ultimate destination for career guidance and study support. Join us on a journey where learning meets ease, tailored exclusively for you!</p>
+                <p className="text-lg text-gray-600 font-semibold my-4">Meet the mastermind behind Learnease.pk, paving the path for success.<br/> With our Dynamic Managing Director and supportive assistant director, we're not just a website. <br/> we're your ultimate destination for career guidance and study support.Join us on a journey where learning meets ease, tailored exclusively for you!</p>
             </div>
             <div className="flex flex-wrap justify-center">
 

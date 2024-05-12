@@ -38,7 +38,7 @@ const BlogCard = () => {
         >
           <img className="w-full h-40 object-cover" src={item.image} alt={item.title} />
           <div className="p-4">
-            <h2 className="text-lg font-semibold text-center bg-PrimaryColor text-white rounded-full">{item.title}</h2>
+            <h2 className="text-lg font-semibold text-center bg-SecondaryColor text-black rounded-full">{item.title}</h2>
             <p className="text-sm text-gray-600 text-center">{item.desc}</p>
             {hoveredId === item.id && (
               <div className="absolute top-0 text-2xl right-0 flex items-center mt-2 mr-2">

@@ -37,9 +37,12 @@ const StartFree = () => {
                 </ul>
               </p>
             </div>
-            <button onClick={()=>navigate('/login')} className="bg-Step rounded-lg text-white p-4 w-full">
+            <div className="flex justify-center items-center">
+              
+            <button onClick={()=>navigate('/admin/login')} className="bg-Step f rounded-full text-white bg-PrimaryColor px-10 py-1 text-center ">
               Start Free Access
             </button>
+            </div>
           </div>
         </div>
       </div>

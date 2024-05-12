@@ -10,74 +10,74 @@ import {
 const data = [
   {
     name: 'Page A',
-    sales: 4000,
-    purchases: 2400,
+    MeetingPending: 4000,
+    MeetingDone: 2400,
     amt: 2400,
   },
   {
     name: 'Page B',
-    sales: 3000,
-    purchases: 1398,
+    MeetingPending: 3000,
+    MeetingDone: 1398,
     amt: 2210,
   },
   {
     name: 'Page C',
-    sales: 2000,
-    purchases: 9800,
+    MeetingPending: 2000,
+    MeetingDone: 9800,
     amt: 2290,
   },
   {
     name: 'Page D',
-    sales: 2780,
-    purchases: 3908,
+    MeetingPending: 2780,
+    MeetingDone: 3908,
     amt: 2000,
   },
   {
     name: 'Page E',
-    sales: 1890,
-    purchases: 4800,
+    MeetingPending: 1890,
+    MeetingDone: 4800,
     amt: 2181,
   },
   {
     name: 'Page F',
-    sales: 2390,
-    purchases: 3800,
+    MeetingPending: 2390,
+    MeetingDone: 3800,
     amt: 2500,
   },
   {
     name: 'Page G',
-    sales: 3490,
-    purchases: 4300,
+    MeetingPending: 3490,
+    MeetingDone: 4300,
     amt: 2100,
   },
   {
     name: 'Page F',
-    sales: 2390,
-    purchases: 3800,
+    MeetingPending: 2390,
+    MeetingDone: 3800,
     amt: 2500,
   },
   {
     name: 'Page G',
-    sales: 3490,
-    purchases: 4300,
+    MeetingPending: 3490,
+    MeetingDone: 4300,
     amt: 2100,
   },
   {
     name: 'Page D',
-    sales: 2780,
-    purchases: 3908,
+    MeetingPending: 2780,
+    MeetingDone: 3908,
     amt: 2000,
   },
   {
     name: 'Page E',
-    sales: 1890,
-    purchases: 4800,
+    MeetingPending: 1890,
+    MeetingDone: 4800,
     amt: 2181,
   },
   {
     name: 'Page F',
-    sales: 2390,
-    purchases: 3800,
+    MeetingPending: 2390,
+    MeetingDone: 3800,
     amt: 2500,
   },    
 ];
@@ -91,8 +91,8 @@ const DashBarChart = () => {
         data={data}
       >       
         <Tooltip/>
-        <Bar dataKey="purchases" fill="#348f6c" shape={<Rectangle />} radius={[10, 10, 0, 0]} width={20} />
-        <Bar dataKey="sales" fill="##e2c992"  shape={<Rectangle />} radius={[10, 10, 0, 0]} />
+        <Bar dataKey="MeetingDone" fill="#348f6c" shape={<Rectangle />} radius={[10, 10, 0, 0]} width={20} />
+        <Bar dataKey="MeetingPending" fill="##e2c992"  shape={<Rectangle />} radius={[10, 10, 0, 0]} />
       </BarChart>
     </ResponsiveContainer>
   

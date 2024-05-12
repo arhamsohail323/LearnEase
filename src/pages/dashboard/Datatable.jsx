@@ -33,7 +33,7 @@ const DashDatatable = () => {
 
   return (
     <>
-    <p className='font-bold ms-3 bg-PrimaryColor w-36 text-center text-white py-2  rounded-full '>Meeting Details</p>
+    <p className='font-bold ms-3 bg-PrimaryColor w-36 text-center text-black py-2  rounded-full '>Meeting Details</p>
     <DataTable
       // title="Meeting Details" 
       columns={columns}

@@ -60,7 +60,7 @@ const AddBlog = () => {
   return (
     <div className='m-5 p-5 bg-gray-50 rounded-2xl'>
       <div className='my-5 rounded flex justify-start items-center'>
-        <button className='group bg-PrimaryColor text-white rounded-full px-10 py-1' onClick={() => navigate(-1)}>
+        <button className='group bg-PrimaryColor text-black rounded-full px-10 py-1' onClick={() => navigate(-1)}>
           Back
         </button>
         {/* <h1 className='text-2xl ml-2'>New Client</h1> */}
@@ -105,7 +105,7 @@ const AddBlog = () => {
           <div className='mt-10 sm:mt-20 flex justify-end'>
             <button
               type='submit'
-              className='py-2 px-16 text-2xl border-2 border-transparent bg-PrimaryColor rounded-lg text-white hover:bg-white hover:border-2 hover:border-PrimaryColor hover:text-PrimaryColor'
+              className='py-2 px-16 text-2xl border-2 border-transparent bg-PrimaryColor rounded-lg text-black hover:bg-black hover:border-2 hover:border-PrimaryColor hover:text-PrimaryColor'
             >
               Save
             </button>

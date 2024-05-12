@@ -5,7 +5,7 @@ import DashDatatable from './Datatable'
 const Dashboard = () => {
   return (
     <div div className='m-5 p-5'>
-    <div className='my-5 rounded-full text-2xl font-bold bg-PrimaryColor text-white px-2 py-1 w-64 flex justify-center items-center' style={{cursor:'pointer', margin: 'auto'}}>
+    <div className='my-5 rounded-full text-2xl font-bold bg-PrimaryColor text-black px-2 py-1 w-64 flex justify-center items-center' style={{cursor:'pointer', margin: 'auto'}}>
   Dashboard
 </div>
 

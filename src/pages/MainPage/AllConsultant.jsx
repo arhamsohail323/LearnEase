@@ -119,10 +119,10 @@ const AllConsultant = () => {
   // If it's the AllConsultant page, don't render the footer
   if (isAllConsultantPage) {
     return (
-      <div className="mt-28">
+      <div className="mt-56">
         <div className="text-center my-8">
-          <h1 className="text-3xl font-bold text-[#009688] ">Our Career Consultant</h1>
-          <p className="text-lg text-gray-600">Are you looking for expert career advice and guidance? Our team of experienced career consultants is here to help you navigate your professional journey.</p>
+          <h1 className="text-2xl font-bold bg-PrimaryColor text-white rounded-full ">Our Career Consultant</h1>
+          <p className="text-lg text-gray-600">Are you Looking for Expert Career Advice and Guidance?<br/> Our team of experienced career consultants is here to help you navigate your professional journey.</p>
         </div>
         <div className="flex flex-wrap justify-center lg:p-10 md:p-10">
           {consultants.map(consultant => (
