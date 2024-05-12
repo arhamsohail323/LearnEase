@@ -6,7 +6,7 @@ const Header = () => {
   const navigate = useNavigate();
   return (
     <>
-      <div id="home" className="bg-white  mx-auto text-start overflow-hidden p-6 md:p-12 lg:p-48 relative">
+      <div id="home" className="bg-white mt-20 lg:mt-0 md:mt-0 sm:mt-0 mx-auto text-start overflow-hidden p-6 md:p-12 lg:p-48 relative">
         <div className="flex flex-col mt-36 md:mt-36 lg:mt-0 gap-4 relative ">
           <h1 className="text-text_Color font-bold  lg:text-4xl text-left">
             Your Ultimate <br /> Learn Ease Coach
@@ -33,7 +33,7 @@ const Header = () => {
               style={{ padding: "10px 20px" }}
               onClick={()=>navigate("/admin/SignUp")}
             >
-              Start Learn
+              Join Now
             </button>
           </div>
         </div>

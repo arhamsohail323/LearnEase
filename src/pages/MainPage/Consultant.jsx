@@ -130,22 +130,22 @@ const ContactFormModal = ({ onClose }) => {
                         required
                         className='py-2 px-8 mb-5 ms-2 rounded-xl outline-PrimaryColor'
                     />
-                   <div className='flex justify-center items-center mx-auto'>
-                   <select
-                        value={consultantName}
-                        onChange={(e) => setConsultantName(e.target.value)}
-                        required
-                        className='py-2 px-8 mb-5 ms-2 rounded-xl outline-PrimaryColor'
-                    >
-                        <option value="">Select Consultant</option>
-                        <option value="Khansa Anjum">Khansa Anjum</option>
-                        <option value="Abida Naseer">Abida Naseer</option>
-                        <option value="Sofia Hanif">Sofia Hanif</option>
-                        <option value="Shajia Shoaib">Shajia Shoaib</option>
-                        <option value="Zaamran Baloch">Zaamran Baloch</option>
-                        <option value="Dr.Sara Saeed Khurram">Dr.Sara Saeed Khurram</option>
-                    </select>
-                   </div>
+                    <div className='flex justify-center items-center mx-auto'>
+                        <select
+                            value={consultantName}
+                            onChange={(e) => setConsultantName(e.target.value)}
+                            required
+                            className='py-2 px-8 mb-5 ms-2 rounded-xl outline-PrimaryColor'
+                        >
+                            <option value="">Select Consultant</option>
+                            <option value="Khansa Anjum">Khansa Anjum</option>
+                            <option value="Abida Naseer">Abida Naseer</option>
+                            <option value="Sofia Hanif">Sofia Hanif</option>
+                            <option value="Shajia Shoaib">Shajia Shoaib</option>
+                            <option value="Zaamran Baloch">Zaamran Baloch</option>
+                            <option value="Dr.Sara Saeed Khurram">Dr.Sara Saeed Khurram</option>
+                        </select>
+                    </div>
                     <textarea
                         placeholder="Enter your Quries"
                         value={formData.comment}
@@ -246,51 +246,41 @@ const Consultant = () => {
     const consultantData = data.filter(item => item.id === parseInt(id));
 
     return (
-        <div className="flex flex-col justify-center gap-10 items-center" style={{ height: '100vh' }}>
-            <div className="w-full ps-20 pe-20 pt-3">
-                <div className="bg-gray-100 p-4 rounded-lg">
-                    {
-                        consultantData.map((item, index) => {
-                            return (
-                                <>
-                                    <div className='flex justify-between'>
-                                        <div className="w-full md:w-64 lg:w-[300px] p-4 relative">
-                                            <div className="mb-4 relative">
-                                                <div>
-                                                    <img src={item.img} alt="Consultant" className="w-[700px] h-[300px] rounded-lg" />
-                                                </div>
-                                            </div>
-                                            <div className='mt-10 absolute top-0 left-[330px]'>
-                                                <h2 className="text-xl font-semibold mb-4">Consultant Details</h2>
-                                                <div className="mb-2">
-                                                    <p>Name:{item.name}</p>
-                                                </div>
-                                                <div className="mb-2">
-                                                    <p>Email:{item.email}</p>
-                                                </div>
-                                                <div className="mb-2">
-                                                    <p>Phone:{item.number}</p>
-                                                </div>
-                                            </div>
-                                        </div>
+        <div className="flex flex-col justify-center items-center min-h-screen">
+            <div className="w-full md:w-11/12 lg:w-10/12 xl:w-9/12 px-4 mt-56 mb-20">
+                <div className="bg-gray-100 rounded-lg">
+                    {consultantData.map((item, index) => (
+                        <div key={index} className="flex flex-col md:flex-row items-stretch pe-4">
+                            <div className="w-full md:w-64 lg:w-96 p-4 relative ">
+                                <div className="mb-4 relative">
+                                    <img src={item.img} alt="Consultant" className="w-full rounded-lg" />
+                                </div>
+                                <div className='mt-4 md:mt-0 md:absolute md:top-0 md:left-full md:ml-4'>
+                                    <h2 className="text-xl font-semibold mb-2 md:mb-4">Consultant Details</h2>
+                                    <div className="mb-2">
+                                        <p><span className="font-semibold">Name:</span> {item.name}</p>
                                     </div>
                                     <div className="mb-2">
-                                        <p className='text-md ps-4 pe-20 text-gray-500 ' >
-                                            {item.detail}
-                                        </p>
+                                        <p><span className="font-semibold">Email:</span> {item.email}</p>
                                     </div>
-                                    <div className='flex justify-end items-end me-20'>
-                                        <button onClick={toggleModal} className="bg-blue-500 text-white px-4 py-2 rounded-md">Contact</button>
+                                    <div className="mb-2">
+                                        <p><span className="font-semibold">Phone:</span> {item.number}</p>
                                     </div>
-                                </>
-                            )
-                        })
-                    }
-
+                                </div>
+                            </div>
+                            <div className="px-4 md:px-0 py-2 md:w-2/3 lg:w-3/4 xl:w-4/5 lg:mt-44  md:mt-44 sm:mt-44">
+                                <p className="text-sm text-gray-500">{item.detail}</p>
+                                <div className="mt-4 md:mt-0 flex justify-end">
+                                    <button onClick={toggleModal} className="bg-blue-500 text-white px-4 py-2 rounded-md">Contact</button>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
                 </div>
             </div>
             {showModal && <ContactFormModal onClose={toggleModal} />}
         </div>
+
     );
 };
 

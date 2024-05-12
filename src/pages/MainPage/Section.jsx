@@ -25,10 +25,10 @@ const Section = () => {
             placeholder="Enter your answer"
           />
           <button className="font-bold text-end bg-PrimaryColor text-white px-10 py-2 rounded-full">Submit</button>
-          <p className="font-bold text-lg ">
+          {/* <p className="font-bold text-lg ">
             Note: Simply click 'Review My Introduction' directly to see the
             analysis of the example.
-          </p>
+          </p> */}
 
         </div>
       </div>

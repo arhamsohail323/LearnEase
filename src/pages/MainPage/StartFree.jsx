@@ -26,7 +26,7 @@ const StartFree = () => {
             />
             <div class="px-6 py-4 text-center">
               <div class="font-bold lg:text-3xl md:text-3xl sm:text-3xl text-lg mb-2">
-                Early Adopter $0
+                FREE PLAN $0
               </div>
               <p class="text-gray-700 text-center text-base">
                 <ul class="list-disc list-inside text-start">
