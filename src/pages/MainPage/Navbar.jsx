@@ -3,7 +3,7 @@ import logos from "../../assets/images/logo.png";
 import Header from "./Header";
 import { useNavigate } from "react-router-dom";
 import image from '../../assets/images/avatar.png'
-import jwt_decode from 'jwt-decode';
+import { jwtDecode } from "jwt-decode";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -19,7 +19,7 @@ const Navbar = () => {
   useEffect(() => {
     const token = localStorage.getItem('token');
     if (token) {
-      const decodedToken = jwt_decode(token);
+      const decodedToken = jwtDecode(token);
       setUser(decodedToken);
     } else {
       setUser(null);
